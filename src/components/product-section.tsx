@@ -48,7 +48,7 @@ export const ProductSection = () => {
           </div>
           <div className="md:w-1/2 mt-8 md:mt-0">
             <img
-              src="/product.jpg"
+              src="/images/school-system-app.png"
               alt="School Management Software"
               className="w-full h-auto object-cover rounded-lg shadow-lg md:mt-10  mb-10"
             />
