@@ -1,7 +1,7 @@
 
 export const AboutUsSection = () => {
     return (
-      <section className="py-20 bg-gray-50 dark:bg-gray-900">
+      <section className="md:py-20 pb-5 bg-gray-50 dark:bg-gray-900">
         <div className="container mx-auto px-6 flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-8 md:mb-0">
             <img
@@ -29,19 +29,23 @@ export const AboutUsSection = () => {
                   <svg className="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                   </svg>
-                  Helped over <span className="font-semibold">50 schools</span> with our school management software.
+                  <span> Helped over <span className="font-semibold">50 schools </span> 
+                  with our school management software.</span>
+                 
                 </li>
                 <li className="flex items-center">
                   <svg className="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                   </svg>
-                  Developed more than <span className="font-semibold">100 apps</span> for various businesses.
-                </li>
+                  <span>     Developed more than <span className="font-semibold">100 apps </span> for various businesses.
+                  </span>
+               </li>
                 <li className="flex items-center">
                   <svg className="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                   </svg>
-                  Trained <span className="font-semibold">200+ students</span> in modern technical skills.
+                  <span>   Trained <span className="font-semibold">200+ students </span> in modern technical skills.
+                  </span>
                 </li>
               </ul>
             
