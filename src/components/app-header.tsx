@@ -15,7 +15,7 @@ export function AppHeader() {
         <Link href="/" className="flex items-center space-x-1 rtl:space-x-reverse">
             <img src="/icon.png" className="h-8" alt="Flowbite Logo" />
             <div className='flex flex-col  justify-start items-start -space-y-1 ' >
-               <span className=" text-lg font-semibold whitespace-nowrap dark:text-white">AS CodeElevate</span>
+               <span className=" text-lg font-semibold whitespace-nowrap dark:text-gray-400">AS CodeElevate</span>
                <span className=" text-xs font-medium text-primary-600 dark:text-gray-400">Solution</span>
             </div>
         </Link>
