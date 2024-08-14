@@ -1,30 +1,30 @@
 // components/ServicesSection.js
 export const ServicesSection = () => {
-    const services = [
-      {
-        name: "Software Development",
-        description: "Web, desktop and mobile software solutions tailored for businesses.",
-        icon: "💻",
-      },
-      {
-        name: "IT Training",
-        description: "Comprehensive IT training programs to enhance your skills.",
-        icon: "📚",
-      },
-      {
-        name: "Digital Marketing",
-        description: "Effective digital marketing strategies to boost your online presence.",
-        icon: "📈",
-      },
-      {
-        name: "Branding",
-        description: "Building strong and impactful brands for your business.",
-        icon: "🏷️",
-      },
+  const services = [
+    {
+      name: "Software Development",
+      description: "We offer tailored web and mobile software solutions designed to meet the specific needs of your business, from custom applications to scalable platforms.",
+      icon: "💻",
+    },
+    {
+      name: "IT Training",
+      description: "Our comprehensive IT training programs cover a wide range of topics, from basic computer skills to advanced software development techniques, ensuring your team stays ahead in the tech world.",
+      icon: "📚",
+    },
+    {
+      name: "Digital Marketing",
+      description: "We provide effective digital marketing strategies that include SEO, content marketing, social media management, and analytics to enhance your online visibility and drive growth.",
+      icon: "📈",
+    },
+    {
+      name: "Branding",
+      description: "Our branding services focus on creating strong and impactful brand identities through logo design, brand messaging, and visual elements to make your business stand out.",
+      icon: "🏷️"
+      }
     ];
   
     return (
-      <section className="py-20 bg-white dark:bg-gray-900">
+      <section className="py-20 bg-white dark:bg-gray-900" id="services">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
             Our Services
@@ -45,9 +45,7 @@ export const ServicesSection = () => {
                    <p className="text-primary-600 dark:text-gray-300 mb-4 group-hover:text-secondary-600">
                      {service.description}
                    </p>
-                   <a href="#read-more" className="text-primary-600 dark:text-blue-400 hover:underline  group-hover:text-secondary-600">
-                     Read more &rarr;
-                   </a>
+                 
                  </div>
                </div>
             ))}

@@ -1,6 +1,6 @@
 export  function Footer() {
     return (
-      <footer className="bg-primary-600 text-secondary-500 py-8">
+      <footer className="bg-primary-600 text-secondary-500 py-8 px-10">
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           <div>
             <h3 className="font-bold mb-4">About</h3>
@@ -12,7 +12,7 @@ export  function Footer() {
               <li><a href="#hero">Home</a></li>
               <li><a href="#services">Services</a></li>
               <li><a href="#about">About Us</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="/contact">Contact</a></li>
             </ul>
           </div>
           <div>
