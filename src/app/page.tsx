@@ -1,5 +1,14 @@
 import Image from "next/image";
-import { AppHeader, HeroSection, ProductSection,ServicesSection, AboutUsSection } from "../components";
+import { 
+  AppHeader, 
+  HeroSection, 
+  ProductSection,
+  ServicesSection, 
+  AboutUsSection, 
+  Testimonials,
+  Footer,
+  CTA
+} from "../components";
 
 export default function Home() {
   return (
@@ -9,6 +18,9 @@ export default function Home() {
         <ProductSection />
         <ServicesSection />
         <AboutUsSection />
+        {/* <Testimonials /> */}
+        <CTA />
+        <Footer />
 
    </main>
   );
