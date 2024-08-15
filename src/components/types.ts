@@ -8,6 +8,16 @@ export type ModalProps = {
   }
 
 
+  export type ProductCardProps = {
+    product: {
+        name: string;
+        description: string;
+        price: string | string[];
+        plan: string;
+        notes?: string[];
+    };
+    onClick?: () => void;
+}
 
   
 export type Product = {

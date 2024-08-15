@@ -3,8 +3,6 @@ import React, { useState } from 'react';
 import { Modal, ProductDetails, ProductCard, CTA } from '@/components';
 import { products } from '../../data';
 
-
-
 export const Products = () => {
   const [selectedProduct, setSelectedProduct] = useState<any>(null);
 

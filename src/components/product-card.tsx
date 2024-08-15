@@ -1,17 +1,5 @@
 import { ReactElement, JSXElementConstructor, ReactNode, ReactPortal, AwaitedReactNode, Key } from "react";
-
-
-interface ProductCardProps {
-    product: {
-        name: string;
-        description: string;
-        price: string | string[];
-        plan: string;
-        notes?: string[];
-    };
-    onClick?: () => void;
-}
-
+import { ProductCardProps } from "./types";
 export const ProductCard = ({ product, onClick } :ProductCardProps) => (
     <div className="bg-white shadow-md rounded-lg overflow-hidden">
       <div className="p-6">

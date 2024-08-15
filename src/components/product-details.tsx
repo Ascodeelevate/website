@@ -1,6 +1,7 @@
 
+import type { ProductDetailsProps } from './types';
 
-export const ProductDetails = ({ product } : any) => (
+export const ProductDetails = ({ product } : ProductDetailsProps) => (
     <div>
       <h2 className="text-2xl font-bold mb-4">{product.name}</h2>
       <p className="text-gray-600 mb-4">{product.description}</p>
