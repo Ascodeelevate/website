@@ -19,3 +19,7 @@ export type Product = {
     notes?: string[];
     features: string[];
   }
+
+  export type ProductDetailsProps = {
+    product: Product;
+  }
