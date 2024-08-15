@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export  function Footer() {
     return (
       <footer className="bg-primary-600 text-secondary-500 py-8 px-10">
@@ -9,10 +11,11 @@ export  function Footer() {
           <div>
             <h3 className="font-bold mb-4">Navigation</h3>
             <ul>
-              <li><a href="#hero">Home</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#about">About Us</a></li>
-              <li><a href="/contact">Contact</a></li>
+              <li><Link href="/">Home</Link></li>
+              <li><Link href="/#services">Services</Link></li>
+              <li><Link href="/products">Products</Link></li>
+              <li><Link href="/about">About Us</Link></li>
+              <li><Link href="/contact">Contact</Link></li>
             </ul>
           </div>
           <div>
@@ -27,7 +30,7 @@ export  function Footer() {
             </div>
           </div> */}
         </div>
-        <div className="text-center mt-8">&copy; 2024 AscodeElevate Solution. All rights reserved.</div>
+        <div className="text-center mt-8">&copy; 2024 AscodeElevate Solution Limited. All rights reserved.</div>
       </footer>
     );
   }
