@@ -12,10 +12,10 @@ export const ProductCard = ({ product, onClick } :ProductCardProps) => (
         </div>
         {Array.isArray(product.price) ? (
           product.price.map((price: string | number | bigint | boolean | ReactElement<any, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | Promise<AwaitedReactNode> | null | undefined, index: Key | null | undefined) => (
-            <p key={index} className="text-lg font-semibold">{price}</p>
+            <p key={index} className="text-lg text-black font-semibold">{price}</p>
           ))
         ) : (
-          <p className="text-lg font-semibold">{product.price}</p>
+          <p className="text-lg font-semibold text-black">{product.price}</p>
         )}
         {product.notes && (
           <ul className="list-disc list-inside mt-4">
