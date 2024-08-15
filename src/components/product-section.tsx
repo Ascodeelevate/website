@@ -83,7 +83,7 @@ export const ProductSection = () => {
         </h1>
         <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
           Discover our specially designed packages that cater to the unique
-          needs of schools and educational institutions. Whether you're aiming
+          needs of schools and educational institutions. Whether you&lsquo;re aiming
           to enhance learning experiences or streamline administrative
           processes, we have the right solution for you. Reach out to us today
           and take the next step in transforming your educational environment.
