@@ -15,7 +15,7 @@ export const HeroSection = () => {
          
           <div className="flex justify-center space-x-4">
             <a
-              href="#products"
+              href="/products"
               className="primary-button"
             >
               Products

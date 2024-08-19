@@ -3,7 +3,7 @@ import type { ProductDetailsProps } from './types';
 
 export const ProductDetails = ({ product } : ProductDetailsProps) => (
     <div>
-      <h2 className="text-2xl font-bold mb-4">{product.name}</h2>
+      <h2 className="text-2xl font-bold text-black mb-4">{product.name}</h2>
       <p className="text-gray-600 mb-4">{product.description}</p>
       <div className="mb-4">
         <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">
