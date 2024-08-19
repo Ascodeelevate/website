@@ -1,6 +1,5 @@
 import Link from "next/link";
 
-// components/CTASection.js
 export  function CTA() {
     return (
       <section className="shadow-md border bg-secondary-600 text-black py-12 md:m-10 m-3">
