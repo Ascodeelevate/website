@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import { useState, useMemo } from 'react';
 import { usePathname } from 'next/navigation';
+import { OptimizedImage } from '@/components';
 
 export function AppHeader() {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +26,7 @@ export function AppHeader() {
     <nav className="bg-white border-gray-200 dark:bg-gray-900">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link href="/" className="flex items-center space-x-1 rtl:space-x-reverse">
-          <img src="/icon.png" className="h-8" alt="Ascodeelevate Logo" />
+          <OptimizedImage src="/icon.png"  width={50} height={50} alt="Ascodeelevate Logo" />
           <div className="flex flex-col justify-start items-start">
             <span className="text-lg font-semibold text-black">AS CodeElevate</span>
             <span className="text-xs font-medium text-primary-600 dark:text-gray-400">Solution</span>
