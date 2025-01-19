@@ -11,9 +11,12 @@ export const ProductCard = ({ product, onClick } :ProductCardProps) => (
           </span>
         </div>
         {Array.isArray(product.price) ? (
+          <ul  className="flex flex-col"
+          >{
           product.price.map((price: string | number | bigint | boolean | ReactElement<any, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | Promise<AwaitedReactNode> | null | undefined, index: Key | null | undefined) => (
-            <p key={index} className="text-lg text-black font-semibold">{price}</p>
-          ))
+            <li key={index} className="text-lg text-black font-semibold">{price}</li>
+          ))}
+          </ul>
         ) : (
           <p className="text-lg font-semibold text-black">{product.price}</p>
         )}
