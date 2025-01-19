@@ -4,7 +4,7 @@ const AboutUs = () => {
     <section className="py-20 bg-gray-50 dark:bg-gray-900">
       <div className="max-w-4xl mx-auto px-6 py-10 space-y-8">
         <h1 className="text-4xl font-bold text-center text-gray-800">
-          About Ascodeelevatesolution
+          About AscodeElevate Solution
         </h1>
         <p className="text-lg text-gray-600 text-center">
           At Ascodeelevatesolution, we are committed to empowering businesses
@@ -91,7 +91,6 @@ const AboutUs = () => {
               </li>
             </ul>
           </div>
-
           <div className="text-gray-800">
             <p>
               At Ascodeelevatesolution, our mission is to simplify processes,
