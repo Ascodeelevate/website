@@ -37,7 +37,7 @@ export const products = [
       id: 3,
       name: "Result Manager Software",
       description: "The Result Manager is a versatile web application accessible from any mobile device, tablet, or computer. This software revolutionizes how schools manage student results, attendance, assignments, and performance tracking",
-      price: "₦3000 per student in a term",
+      price: "₦300 per student in a term",
       plan: "Termly",
       notes: [
         "Results for the first term and second term will still be available in the third term.",
