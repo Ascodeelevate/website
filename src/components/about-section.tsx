@@ -47,7 +47,7 @@ export const AboutUsSection = () => {
                   <svg className="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                   </svg>
-                  <span>   Trained <span className="font-semibold">200+ students </span> in modern technical skills.
+                  <span> Trained <span className="font-semibold">200+ students </span> in modern technical skills.
                   </span>
                 </li>
               </ul>
