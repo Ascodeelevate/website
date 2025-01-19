@@ -6,7 +6,7 @@ import { OptimizedImage } from '@/components';
 
 export function AppHeader() {
   const [isOpen, setIsOpen] = useState(false);
-  const pathname = usePathname(); // Get the current path
+  const pathname = usePathname();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -26,7 +26,7 @@ export function AppHeader() {
     <nav className="bg-white border-gray-200 dark:bg-gray-900">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link href="/" className="flex items-center space-x-1 rtl:space-x-reverse">
-          <OptimizedImage src="/icon.png"  width={50} height={50} alt="Ascodeelevate Logo" />
+          <OptimizedImage src="/icon.png" width={50} height={50} alt="Ascodeelevate Logo" />
           <div className="flex flex-col justify-start items-start">
             <span className="text-lg font-semibold text-black">AS CodeElevate</span>
             <span className="text-xs font-medium text-primary-600 dark:text-gray-400">Solution</span>
@@ -44,24 +44,29 @@ export function AppHeader() {
             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
           </svg>
         </button>
-        <div className={`${isOpen ? 'block' : 'hidden'} w-full lg:flex md:items-center md:space-x-40 md:w-auto`} id="navbar-default">
-          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <div className={`${isOpen ? 'block' : 'hidden'} w-full lg:flex lg:items-center lg:space-x-40 lg:w-auto`} id="navbar-default">
+          <ul className="font-medium flex flex-col p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:flex-row lg:space-x-8 rtl:space-x-reverse lg:mt-0 lg:border-0 lg:bg-white dark:bg-gray-800 lg:dark:bg-gray-900 dark:border-gray-700">
             {navItems.map((item) => (
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className={`block py-2 px-3 rounded ${isActive(item.href) ? 'text-primary-600' : 'text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary-600 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'}`}
+                  onClick={toggleMenu}
+                  className={`block py-2 px-3 rounded ${
+                    isActive(item.href)
+                      ? 'text-primary-600'
+                      : 'text-gray-900 hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-primary-600 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent'
+                  }`}
                 >
                   {item.name}
                 </Link>
               </li>
             ))}
           </ul>
-
-          <div className="mt-4 md:mt-0 md:ml-4">
+          
+          <div className="mt-4 lg:mt-0 lg:ml-4">
             <Link
               href="/contact"
-              className="block w-full py-2 px-3 text-center text-secondary-600 bg-primary-600 rounded md:inline-block md:w-auto md:px-5 md:py-2 md:ml-2 hover:bg-secondary-600  hover:text-primary-500"
+              className="block w-full py-2 px-3 text-center text-secondary-600 bg-primary-600 rounded lg:inline-block lg:w-auto lg:px-5 lg:py-2 lg:ml-2 hover:bg-secondary-600 hover:text-primary-500"
             >
               Get started
             </Link>
