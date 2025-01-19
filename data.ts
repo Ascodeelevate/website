@@ -1,114 +1,79 @@
 export const products = [
-    {
-      id: 1,
-      name: "CBT Software for Internal and External Exam Practice",
-      description: "Software for exam practice, both internal and external.",
-      price: "₦50,000 per term",
-      plan: "Termly",
-      features: [
-        "Support for internal and external exams",
-        "Practice tests and mock exams",
-        "Automated grading system",
-        "Performance analytics"
-      ]
-    },
+  {
+    id: 1,
+    name: "CBT Software for  External Exam Practice",
+    description: "is designed to prepare students effectively for external exams such as WAEC, NECO, and JAMB. This software includes a vast database of past exam questions with correct answers and detailed explanations.",
+    price: "₦2,000 per 1 software",
+    plan: "sales",
+    features: [
+      "Realistic Exam Simulation: Students can take practice exams under conditions that mimic real-life exams, helping them build confidence and improve time management.",
+      "Performance Analytics: After completing practice exams, students can review their answers, identify mistakes, and focus on areas needing improvement.",
+      "Comprehensive Question Bank: A wide range of past questions ensures thorough preparation various subjects.",
+      "Accessibility: Available on multiple devices, allowing students to practice anytime, anywhere.",
+      "External Exam CBT significantly reduces student failure rates in external exams by providing consistent practice and immediate feedback, ensuring students are well-prepared and confident."
+    ]
+  },
     {
       id: 2,
-      name: "Result Manager Software",
-      description: "Manage student results efficiently.",
-      price: "₦25,000 per 100 students per term",
-      plan: "Termly",
-      notes: [
-        "Results for the first term and second term will still be available in the third term.",
-        "Results will be deleted at the end of the session unless you choose to retain them.",
-        "Optional Retention: To retain results permanently: ₦10,000 per 100 students per term",
+      name: "CBT Software for Internal  Exam",
+      description: "InternalExamCBT brings modern Computer-Based Testing (CBT) to schools for internal exams. This software transforms the traditional exam process",
+      price: [
+        "₦40,000 per term",
+        "₦20,000  first time user",
+        "₦350,000  buyout and use offline"
       ],
+      plan: "Termly",
       features: [
-        "Efficient result entry and management",
-        "Automatic calculation of grades and averages",
-        "Customizable report card generation",
-        "Data retention options"
+        "Efficient Exam Administration: Create, administer, and grade exams quickly and accurately.",
+        "Enhanced Security: Reduce cheating and ensure exam integrity with secure, digital testing.",
+        "Instant Results: Provide students with immediate feedback on their performance.",
+        "Environmentally Friendly: Eliminate the need for paper-based exams, promoting sustainability."
+      ],
+      notes: [
+        "By adopting InternalExamCBT, schools can streamline their internal exam processes, save time and resources, and transition to modern, technology-driven assessment methods."
       ]
     },
     {
       id: 3,
-      name: "Comprehensive Package",
-      description: "CBT Software for Internal and External Exam Practice + Result Manager Software",
-      price: [
-        "Result Manager Software: ₦20,000 per 100 students per term",
-        "Internal and External CBT: ₦40,000 per term",
-      ],
+      name: "Result Manager Software",
+      description: "The Result Manager is a versatile web application accessible from any mobile device, tablet, or computer. This software revolutionizes how schools manage student results, attendance, assignments, and performance tracking",
+      price: "₦3000 per student in a term",
       plan: "Termly",
       notes: [
         "Results for the first term and second term will still be available in the third term.",
         "Results will be deleted at the end of the session unless you choose to retain them.",
         "Optional Retention: To retain results permanently: ₦10,000 per 100 students per term",
+        "-By implementing the Result Manager, schools can reduce administrative workload, eliminate errors in result compilation, and ensure timely communication of important student information, while fostering better engagement and academic performance through comprehensive tracking and reporting."
       ],
       features: [
-        "Combined benefits of CBT Software and Result Manager",
-        "Integrated exam practice and result management",
-        "Cost-effective bundle pricing",
-        "Comprehensive school management solution"
+        "Comprehensive Result Management: Easily record, calculate, and store student results with unparalleled accuracy. Attendance Trackin",
+        "Attendance Tracking: Mark attendance and track student absence days seamlessly.",
+        "Online Assignment & Project Management: Assign and track student assignments and projects online, enabling real-time submissions and feedback.",
+        "Student Performance Tracking: Monitor and analyze student performance trends to provide actionable insights for academic improvement.",
+        "Automated Reports: Generate detailed reports and statistics to track student progress, attendance trends, and assignment completion",
+        "User-Friendly Interface: Simplified navigation ensures educators can use the software efficiently without extensive training."
       ]
     },
     {
       id: 4,
-      name: "Professional ICT Instructor (Admin)",
-      description: "Includes managing the ICT curriculum and all software for the school",
-      price: "₦180,000 per month",
-      plan: "Monthly",
-      notes: ["No software payment is required at the end of the term"],
-      features: [
-        "Expert ICT curriculum management",
-        "Software administration for the school",
-        "Regular updates and maintenance",
-        "On-site technical support"
-      ]
-    },
-    {
-      id: 5,
-      name: "Full ICT Setup with Instructor",
-      description: "Includes 15 computers, 1 projector, and 1 professional ICT instructor (admin) to manage the ICT curriculum",
-      price: "₦250,000 per month",
-      plan: "Monthly",
-      notes: ["No software payment is required at the end of the term"],
-      features: [
-        "Complete hardware setup with 15 computers and 1 projector",
-        "Professional ICT instructor included",
-        "Full ICT curriculum management",
-        "Comprehensive technical support"
-      ]
-    },
-    {
-      id: 6,
-      name: "Advanced ICT Setup with Instructors",
-      description: "Includes 30 computers, 2 projectors, and 2 professional ICT instructors (admin) to manage the ICT curriculum",
-      price: "₦400,000 per month",
-      plan: "Monthly",
-      notes: ["No software payment is required at the end of the term"],
-      features: [
-        "Extended hardware setup with 30 computers and 2 projectors",
-        "Two professional ICT instructors included",
-        "Advanced ICT curriculum management",
-        "Comprehensive technical support for larger setups"
-      ]
-    },
-    {
-      id: 7,
-      name: "Alternative Monthly Plan",
-      description: "For schools not ready to permanently employ staff. Provides a staff member who will manage all software for the school, teach the ICT curriculum, and be available at any time to address urgent issues.",
+      name: "Modern School Website",
+      description: "Our ready-made modern school website provides schools with a dynamic, professional online presence The website is fully customizable and packed with features that enhance communication, engagement, and visibility.",
       price: [
-        "Once a Week: ₦50,000 per month",
-        "Twice a Week: ₦95,000 per month",
+        "₦300,000",
       ],
-      plan: "Monthly",
-      notes: ["No software payment is required at the end of the term", "Demo is available"],
+      plan: "sales",
+      notes: [
+        "This website positions your school as a modern, forward-thinking institution, attracting new enrollments and enhancing communication with stakeholders.",
+      ],
       features: [
-        "Flexible staffing solution",
-        "ICT curriculum teaching",
-        "Software management for the school",
-        "On-call support for urgent issues"
+        "Customizable Content: Update existing pages, create new ones, or delete outdated content with ease.",
+        "Interactive Map Integration: Allow parents, prospective students, and visitors to locate the school effortlessly from anywhere.",
+        "News & Events Section: Post the latest school updates, announcements, and details of upcoming events.",
+        "Photo & Video Galleries: Share memorable moments from past events by uploading images and videos.",
+        "Engaging Multimedia: Showcase the school’s achievements, extracurricular activities, and special programs.",
+        "Responsive Design: Optimized for mobile, tablet, and desktop, ensuring seamless access for all users.",
+        "Contact & Inquiry Forms: Enable stakeholders to connect with the school easily."
       ]
-    },
+    }
   ];
   
