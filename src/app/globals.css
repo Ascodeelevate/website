@@ -40,3 +40,9 @@ body {
 .outline-button {
   @apply inline-block text-center  text-primary-600 border-2 border-primary-600 text-lg font-semibold py-3 px-10 hover:bg-secondary-600  hover:text-primary-500  
 }
+
+
+.primary-button-2 {
+  @apply   block w-full py-2 px-3 text-center text-black bg-white rounded md:inline-block md:w-auto md:px-10 md:py-2 md:ml-2 hover:text-primary-600
+          
+}
