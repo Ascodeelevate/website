@@ -1,83 +1,56 @@
-"use client";
-import Link from "next/link";
-import { useState, useMemo } from "react";
-import { usePathname } from "next/navigation";
-import { OptimizedImage } from "@/components";
-import { RiMenu3Fill } from "react-icons/ri";
-import { MdClose } from "react-icons/md";
+'use client';
+import Link from 'next/link';
+import { useState, useMemo } from 'react';
+import { usePathname } from 'next/navigation';
+import { OptimizedImage } from '@/components';
 
 export function AppHeader() {
   const [isOpen, setIsOpen] = useState(false);
-  const pathname = usePathname();
+  const pathname = usePathname(); // Get the current path
 
   const toggleMenu = () => {
-    setIsOpen((prev) => !prev);
+    setIsOpen(!isOpen);
   };
 
-  const navItems = useMemo(
-    () => [
-      { name: "Home", href: "/" },
-      { name: "About", href: "/about" },
-      { name: "Services", href: "/#services" },
-      { name: "Products", href: "/products" },
-      { name: "Contact", href: "/contact" },
-    ],
-    []
-  );
+  const navItems = useMemo(() => [
+    { name: 'Home', href: '/' },
+    { name: 'About', href: '/about' },
+    { name: 'Services', href: '/#services' },
+    { name: 'Products', href: '/products' },
+    { name: 'Contact', href: '/contact' },
+  ], []);
 
   const isActive = (href: string) => pathname === href;
 
   return (
-    <nav className="bg-white border-b border-gray-200 dark:bg-gray-900 dark:border-gray-700">
-      <div className="container mx-auto flex items-center justify-between px-4 py-3">
-        {/* Logo Section */}
-        <Link
-          href="/"
-          className="flex items-center space-x-2 rtl:space-x-reverse"
-        >
-          <OptimizedImage
-            src="/icon.png"
-            width={40}
-            height={40}
-            alt="Ascodeelevate Logo"
-          />
-          <div>
-            <span className="text-lg font-semibold text-black dark:text-white">
-              AS CodeElevate
-            </span>
-            <span className="text-xs font-medium text-primary-600 dark:text-gray-400 block">
-              Solution
-            </span>
+    <nav className="bg-white border-gray-200 dark:bg-gray-900">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <Link href="/" className="flex items-center space-x-1 rtl:space-x-reverse">
+          <OptimizedImage src="/icon.png"  width={50} height={50} alt="Ascodeelevate Logo" />
+          <div className="flex flex-col justify-start items-start">
+            <span className="text-lg font-semibold text-black">AS CodeElevate</span>
+            <span className="text-xs font-medium text-primary-600 dark:text-gray-400">Solution</span>
           </div>
         </Link>
-
         <button
           onClick={toggleMenu}
           type="button"
-          className="lg:hidden p-2 text-gray-500 dark:text-gray-400 rounded focus:outline-none ring-2 ring-gray-200 dark:focus:ring-gray-600"
+          className="inline-flex items-center p-2 border-0 bg-white w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default"
+          aria-expanded={isOpen ? 'true' : 'false'}
         >
-          {isOpen ? (
-            <MdClose className="w-6 h-6 text-gray-800 dark:text-white" />
-          ) : (
-            <RiMenu3Fill className="w-6 h-6 text-gray-800 dark:text-white" />
-          )}
+          <span className="sr-only">Open main menu</span>
+          <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
         </button>
-        <div
-          className={`${
-            isOpen ? "block" : "hidden"
-          } absolute lg:static top-16 left-0 w-full lg:w-auto bg-white lg:bg-transparent dark:bg-gray-900 lg:dark:bg-transparent shadow-lg lg:shadow-none z-20 lg:flex lg:items-center lg:space-x-8`}
-        >
-          <ul className="flex flex-col lg:flex-row items-start lg:items-center lg:space-x-8 w-full lg:w-auto bg-white lg:bg-transparent dark:bg-gray-900 lg:dark:bg-transparent">
+        <div className={`${isOpen ? 'block' : 'hidden'} w-full md:flex md:items-center md:space-x-40 md:w-auto`} id="navbar-default">
+          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             {navItems.map((item) => (
-              <li key={item.href} className="w-full lg:w-auto">
+              <li key={item.href}>
                 <Link
                   href={item.href}
-                  onClick={() => setIsOpen(false)}
-                  className={`block w-full lg:inline-block py-2 px-4 lg:py-0 text-gray-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400 ${
-                    isActive(item.href)
-                      ? "font-semibold text-primary-600 dark:text-primary-400 border-b-2 border-primary-600 dark:border-primary-400"
-                      : ""
-                  }`}
+                  className={`block py-2 px-3 rounded ${isActive(item.href) ? 'text-primary-600' : 'text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary-600 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'}`}
                 >
                   {item.name}
                 </Link>
@@ -85,13 +58,12 @@ export function AppHeader() {
             ))}
           </ul>
 
-          {/* "Get Started" Button */}
-          <div className="mt-4 lg:mt-0 lg:ml-4 px-4 lg:px-0">
+          <div className="mt-4 md:mt-0 md:ml-4">
             <Link
               href="/contact"
-              className="block lg:inline-block w-full lg:w-auto py-2 px-4 text-center bg-primary-600 text-white rounded-lg hover:bg-primary-700 dark:bg-primary-500 dark:hover:bg-primary-600"
+              className="block w-full py-2 px-3 text-center text-secondary-600 bg-primary-600 rounded md:inline-block md:w-auto md:px-5 md:py-2 md:ml-2 hover:bg-secondary-600  hover:text-primary-500"
             >
-              Get Started
+              Get started
             </Link>
           </div>
         </div>
