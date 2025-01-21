@@ -20,7 +20,7 @@ export const Products = () => {
           and take the next step in transforming your educational environment, <strong>Demos Available for All Products</strong>.
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center items-center mx-auto max-w-6xl">
         {products.map((product) => (
           <ProductCard 
             key={product.id} 

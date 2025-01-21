@@ -15,8 +15,8 @@ export const HeroSection = () => {
         </h1>
         <div className="w-full flex justify-center">
           <p className="text-lg lg:text-center text-left md:max-w-[60%] md:text-xl text-gray-900 mb-8">
-            We provide custom software development and ready-to-use software products tailored to
-            meet diverse business needs.
+            We provide custom software development and ready-to-use software
+            products tailored to meet diverse business needs.
           </p>
         </div>
 
@@ -29,5 +29,3 @@ export const HeroSection = () => {
     </section>
   );
 };
-
-  

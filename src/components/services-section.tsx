@@ -24,7 +24,7 @@ export const ServicesSection = () => {
     ];
   
     return (
-      <section className="py-20 bg-white dark:bg-gray-900" id="services">
+      <section className="py-20 bg-white dark:bg-gray-900 border" id="services">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
             Our Services
@@ -34,15 +34,16 @@ export const ServicesSection = () => {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
             {services.map((service, index) => (
-                 <div key={index} className="bg-secondary-600 hover:bg-primary-600 dark:bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 flex items-center group">
-                 <div className="text-4xl text-blue-600 dark:text-blue-400 mr-4">
-                   {service.icon}
-                 </div>
-                 <div className="text-left">
-                   <h3 className="text-xl font-semibold text-primary-600 dark:text-white mb-2 group-hover:text-secondary-600">
+                 <div key={index} className="rounded-lg border p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 flex items-center group">
+       <div className="flex justify-center items-center text-4xl mr-4">
+  {service.icon}
+</div>
+
+                 <div className="text-left text-black">
+                   <h3 className="text-xl font-bold">
                      {service.name}
                    </h3>
-                   <p className="text-primary-600 dark:text-gray-300 mb-4 group-hover:text-secondary-600">
+                   <p className="mb-4 text-black">
                      {service.description}
                    </p>
                  
