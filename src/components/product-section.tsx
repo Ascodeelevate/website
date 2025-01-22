@@ -4,7 +4,7 @@ import { products } from "../../data";
 
 export const ProductSection = () => {
   return (
-    <section className="md:py-10 px-10 py-5" id="products">
+    <section className="md:py-10 px-10 py-5 mt-[5rem]" id="products">
       <div className="text-center ">
         <h1 className="text-4xl font-bold text-black mb-4">
           Our <span className="border-b-4 border-primary-400">Educational</span>{" "}
@@ -26,10 +26,10 @@ export const ProductSection = () => {
       </div>
 
       <div className="flex justify-center md:flex-row space-y-4 md:space-y-0 flex-col md:space-x-4 md:mt-10">
-        <a href="/products" className="primary-button-fill">
+        <a href="/products" className="primary-button">
           View All Products
         </a>
-        <a href="/contact" className="outline-button">
+        <a href="/contact" className="secondary-button">
           Contact us
         </a>
       </div>

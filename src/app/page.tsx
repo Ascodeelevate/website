@@ -1,13 +1,11 @@
-import Image from "next/image";
 import { 
-  AppHeader, 
   HeroSection, 
   ProductSection,
   ServicesSection, 
   AboutUsSection, 
-  Testimonials,
-  Footer,
-  CTA
+  CTA,
+  TrustedClients,
+  Testimonial
 } from "../components";
 
 export default function Home() {
@@ -17,9 +15,9 @@ export default function Home() {
         <ProductSection />
         <ServicesSection />
         <AboutUsSection />
+        <Testimonial />
+        <TrustedClients />
         <CTA />
-        
-
    </main>
   );
 }

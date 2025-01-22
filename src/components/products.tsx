@@ -7,7 +7,8 @@ export const Products = () => {
   const [selectedProduct, setSelectedProduct] = useState<any>(null);
 
   return (
-    <div className="w-full bg-gray-200  px-10 py-8">
+    <div className="w-full bg-gray-200  ">
+      <div className='px-10 py-8 '>
       <div className="text-center py-8">
         <h1 className="text-4xl font-bold text-primary-600 mb-4">
           Our Products
@@ -20,7 +21,7 @@ export const Products = () => {
           and take the next step in transforming your educational environment, <strong>Demos Available for All Products</strong>.
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center items-center mx-auto max-w-6xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center items-center mx-auto max-w-6xl mb-5">
         {products.map((product) => (
           <ProductCard 
             key={product.id} 
@@ -32,6 +33,7 @@ export const Products = () => {
       <Modal isOpen={!!selectedProduct} onClose={() => setSelectedProduct(null)}>
         {selectedProduct && <ProductDetails product={selectedProduct} />}
       </Modal>
+      </div>
       <CTA />
     </div>
   );

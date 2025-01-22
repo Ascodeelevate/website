@@ -21,7 +21,7 @@ export const HeroSection = () => {
         </div>
 
         <div className="flex justify-center space-x-4">
-          <a href="/products" className="primary-button-2 w-full">
+          <a href="/products" className="primary-button-white">
             Ready Made Software
           </a>
         </div>

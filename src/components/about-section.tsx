@@ -1,7 +1,7 @@
 import { OptimizedImage } from "@/components";
 export const AboutUsSection = () => {
   return (
-    <section className="md:py-20 pb-5 bg-gray-50 dark:bg-gray-900">
+    <section className="md:py-20 pb-5 bg-gray-50 dark:bg-gray-900 mb-10">
       <div className="container mx-auto px-6 flex flex-col md:flex-row items-center">
         <div className="md:w-1/2 mb-8 md:mb-0">
           <OptimizedImage
