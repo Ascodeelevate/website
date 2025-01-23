@@ -25,7 +25,7 @@ export const ProductSection = () => {
         ))}
       </div>
 
-      <div className="flex justify-center md:flex-row space-y-4 md:space-y-0 flex-col md:space-x-4 md:mt-10">
+      <div className="flex justify-center md:flex-row space-y-4 md:space-y-0 flex-col md:space-x-4 mt-10">
         <a href="/products" className="primary-button">
           View All Products
         </a>

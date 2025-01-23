@@ -34,7 +34,6 @@ export const Products = () => {
         {selectedProduct && <ProductDetails product={selectedProduct} />}
       </Modal>
       </div>
-      <CTA />
     </div>
   );
 };

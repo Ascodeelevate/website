@@ -3,7 +3,6 @@ import {
   ProductSection,
   ServicesSection, 
   AboutUsSection, 
-  CTA,
   TrustedClients,
   Testimonial
 } from "../components";
@@ -17,7 +16,6 @@ export default function Home() {
         <AboutUsSection />
         <Testimonial />
         <TrustedClients />
-        <CTA />
    </main>
   );
 }

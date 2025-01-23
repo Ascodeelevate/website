@@ -97,6 +97,7 @@ export function AppHeader() {
 
           <div className="mt-4 lg:mt-0 lg:ml-4">
             <Link
+              onClick={toggleMenu}
               href="/contact"
               className="primary-button-white"
             >
