@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useState, useMemo } from "react";
 import { usePathname } from "next/navigation";
 import { OptimizedImage } from "@/components";
+import { ZoomInOnScroll } from "./zoom-animation";
 
 export function AppHeader() {
   const [isOpen, setIsOpen] = useState(false);
@@ -77,6 +78,7 @@ export function AppHeader() {
           } w-full lg:flex lg:items-center lg:space-x-40 lg:w-auto`}
           id="navbar-default"
         >
+          <ZoomInOnScroll>
           <ul className="font-medium flex flex-col p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:flex-row lg:space-x-8 rtl:space-x-reverse lg:mt-0 lg:border-0 lg:bg-white dark:bg-gray-800 lg:dark:bg-gray-900 dark:border-gray-700">
             {navItems.map((item) => (
               <li key={item.href}>
@@ -94,7 +96,9 @@ export function AppHeader() {
               </li>
             ))}
           </ul>
+          </ZoomInOnScroll>
 
+         <ZoomInOnScroll>
           <div className="mt-4 lg:mt-0 lg:ml-4">
             <Link
               onClick={toggleMenu}
@@ -104,6 +108,7 @@ export function AppHeader() {
               Get started
             </Link>
           </div>
+          </ZoomInOnScroll>
         </div>
       </div>
     </nav>
