@@ -1,3 +1,5 @@
+import { ZoomInOnScroll } from "./zoom-animation";
+
 // components/ServicesSection.js
 export const ServicesSection = () => {
   const services = [
@@ -39,9 +41,10 @@ export const ServicesSection = () => {
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {services.map((service, index) => (
+            <ZoomInOnScroll>
             <div
               key={index}
-              className="rounded-lg border p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 flex items-center group"
+              className="rounded-lg animate-zoom-in border p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 flex items-center group"
             >
               <div className="flex justify-center items-center text-4xl mr-4">
                 {service.icon}
@@ -52,6 +55,7 @@ export const ServicesSection = () => {
                 <p className="mb-4 text-black">{service.description}</p>
               </div>
             </div>
+            </ZoomInOnScroll>
           ))}
         </div>
       </div>

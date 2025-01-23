@@ -12,7 +12,7 @@ export const ProductCard = ({ product, onClick }: ProductCardProps) => {
   };
 
   return (
-    <div className="relative group bg-white shadow-lg border max-w-[350px] min-h-[350px] rounded-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-2xl">
+    <div className="relative animate-zoom-in group bg-white shadow-lg border max-w-[350px] min-h-[350px] rounded-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-2xl">
       {/* Circular Element at the Top */}
       <div className="flex justify-center items-center">
         <div className="w-16 h-16 bg-primary-400 text-white border-2 border-primary-600 flex items-center justify-center rounded-full mt-4">

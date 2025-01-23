@@ -1,5 +1,6 @@
 import React from "react";
 import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
+import { ZoomInOnScroll } from "./zoom-animation";
 
 interface Testimonial {
   name: string;
@@ -31,7 +32,6 @@ export const Testimonial: React.FC = () => {
         "Professional and efficient. They delivered exactly what we needed with great attention to detail.",
       rating: 4,
     },
-    
   ];
 
   const renderStars = (rating: number) => {
@@ -67,25 +67,25 @@ export const Testimonial: React.FC = () => {
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <div
-              key={index}
-              className="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105"
-            >
-              <div className="text-left">
-                <div className="mb-4">
-                  {renderStars(testimonial.rating)}
+            <ZoomInOnScroll>
+              <div
+                key={index}
+                className="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105"
+              >
+                <div className="text-left">
+                  <div className="mb-4">{renderStars(testimonial.rating)}</div>
+                  <p className="italic text-gray-700 dark:text-gray-300 mb-4">
+                    "{testimonial.feedback}"
+                  </p>
+                  <h3 className="text-lg font-bold text-gray-900 dark:text-white">
+                    {testimonial.name}
+                  </h3>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">
+                    {testimonial.designation}
+                  </p>
                 </div>
-                <p className="italic text-gray-700 dark:text-gray-300 mb-4">
-                  "{testimonial.feedback}"
-                </p>
-                <h3 className="text-lg font-bold text-gray-900 dark:text-white">
-                  {testimonial.name}
-                </h3>
-                <p className="text-sm text-gray-600 dark:text-gray-400">
-                  {testimonial.designation}
-                </p>
               </div>
-            </div>
+            </ZoomInOnScroll>
           ))}
         </div>
       </div>
