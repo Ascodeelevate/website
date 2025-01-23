@@ -67,9 +67,8 @@ export const Testimonial: React.FC = () => {
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <ZoomInOnScroll>
+            <ZoomInOnScroll   key={index}>
               <div
-                key={index}
                 className="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105"
               >
                 <div className="text-left">

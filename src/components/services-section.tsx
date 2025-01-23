@@ -41,9 +41,8 @@ export const ServicesSection = () => {
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {services.map((service, index) => (
-            <ZoomInOnScroll>
-            <div
-              key={index}
+            <ZoomInOnScroll  key={index}>
+            <div   
               className="rounded-lg animate-zoom-in border p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 flex items-center group"
             >
               <div className="flex justify-center items-center text-4xl mr-4">

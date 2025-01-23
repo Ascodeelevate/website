@@ -35,9 +35,10 @@ export const TrustedClients: React.FC = () => {
         </p>
         <div className="flex overflow-x-auto space-x-8 py-4 scrollbar-hide">
           {clients.map((client, index) => (
-            <ZoomInOnScroll>
+            <ZoomInOnScroll
+            key={index}
+            >
               <div
-                key={index}
                 className="flex animation-fade-out items-center justify-center min-w-[120px] h-[100px] bg-gray-100 dark:bg-gray-700 rounded-lg shadow-lg"
               >
                 <img

@@ -22,8 +22,8 @@ export const ProductSection = () => {
       </ZoomInOnScroll>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center items-center mx-auto max-w-6xl mt-10">
         {products.slice(0, 3).map((product, index) => (
-          <ZoomInOnScroll>
-           <ProductCard key={index} product={product} />
+          <ZoomInOnScroll key={index} >
+           <ProductCard product={product} />
           </ZoomInOnScroll>
         ))}
       </div>
