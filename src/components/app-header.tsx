@@ -79,35 +79,35 @@ export function AppHeader() {
           id="navbar-default"
         >
           <ZoomInOnScroll>
-          <ul className="font-medium flex flex-col p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:flex-row lg:space-x-8 rtl:space-x-reverse lg:mt-0 lg:border-0 lg:bg-white dark:bg-gray-800 lg:dark:bg-gray-900 dark:border-gray-700">
-            {navItems.map((item) => (
-              <li key={item.href}>
-                <Link
-                  onClick={toggleMenu}
-                  href={item.href}
-                  className={`block py-2 px-3 rounded ${
-                    isActive(item.href)
-                      ? "text-primary-600"
-                      : "text-gray-900 hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-primary-600 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent"
-                  }`}
-                >
-                  {item.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
+            <ul className="font-medium flex flex-col p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:flex-row lg:space-x-8 rtl:space-x-reverse lg:mt-0 lg:border-0 lg:bg-white dark:bg-gray-800 lg:dark:bg-gray-900 dark:border-gray-700">
+              {navItems.map((item) => (
+                <li key={item.href}>
+                  <Link
+                    onClick={toggleMenu}
+                    href={item.href}
+                    className={`block py-2 px-3 rounded ${
+                      isActive(item.href)
+                        ? "text-primary-600"
+                        : "text-gray-900 hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-primary-600 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent"
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </ZoomInOnScroll>
 
-         <ZoomInOnScroll>
-          <div className="mt-4 lg:mt-0 lg:ml-4">
-            <Link
-              onClick={toggleMenu}
-              href="/contact"
-              className="primary-button-white"
-            >
-              Get started
-            </Link>
-          </div>
+          <ZoomInOnScroll>
+            <div className="mt-4 lg:mt-0 lg:ml-4">
+              <Link
+                onClick={toggleMenu}
+                href="/contact"
+                className="primary-button-white"
+              >
+                Get started
+              </Link>
+            </div>
           </ZoomInOnScroll>
         </div>
       </div>
