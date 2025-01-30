@@ -18,12 +18,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: 'Inter', sans-serif;
 }
 
 @layer utilities {
@@ -33,10 +28,27 @@ body {
 }
 
 
-.primary-button {
-  @apply inline-block  text-center bg-primary-500 text-secondary-600 text-lg font-semibold py-3 px-10  hover:bg-secondary-600  hover:text-primary-500 
+.primary-button-white{
+  @apply block w-full py-2 px-3 text-center  text-black  bg-white rounded lg:inline-block lg:w-auto lg:px-5 lg:py-2 lg:ml-2 hover:text-primary-600
 }
 
-.outline-button {
-  @apply inline-block text-center  text-primary-600 border-2 border-primary-600 text-lg font-semibold py-3 px-10 hover:bg-secondary-600  hover:text-primary-500  
+.primary-button{
+  @apply block w-full py-2 px-3 text-center  text-white  bg-primary-500 rounded lg:inline-block lg:w-auto lg:px-5 lg:py-2 lg:ml-2 hover:text-black
+
+}
+
+.secondary-button{
+  @apply block w-full py-2 px-3 text-center  text-primary-600  bg-secondary-600 rounded lg:inline-block lg:w-auto lg:px-5 lg:py-2 lg:ml-2 hover:text-black
+
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Edge */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.scrollbar-hide {
+  scrollbar-width: none;
 }

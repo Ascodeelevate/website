@@ -1,35 +1,34 @@
-
+import { ZoomInOnScroll } from "./zoom-animation";
 export const HeroSection = () => {
-    return (
-      <section className="py-20">
-        <div className="container mx-auto px-6 text-center">
-          <h1 className="-trackig-[1px] mx-auto mb-6 font-PublicSans text-3xl font-bold leading-[1.06] text-[#121212] md:max-w-[60%] md:text-[60px] lg:max-w-[70%] lg:text-[50px] xl:max-w-[856px] xl:text-[70px] jos">
-          Innovative Software Solutions for Every Need
+  return (
+    <section
+      className="relative py-20 bg-primary-400 h-[80vh] lg:h-[90vh] flex items-center justify-center"
+      style={{
+        backgroundImage: "url('/images/01.jpg')", // Replace with the actual path to your image
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      <div className="absolute inset-0 bg-primary-400 opacity-90"></div>
+      <ZoomInOnScroll>
+        <div className="relative animate-zoom-in  container mx-auto lg:px-6 px-8 lg:text-center space-y-3">
+          <h1 className="mx-auto lg:max-w-[60%] md:max-w-[60%] lg:text-6xl text-4xl font-bold text-white dark:text-gray-300 mb-4">
+            We are building software solutions to help.
           </h1>
           <div className="w-full flex justify-center">
-            <p className="text-lg text-center max-auto  md:max-w-[60%] md:text-xl text-gray-700 dark:text-gray-300 mb-8">
-                    We provide custom software development and ready-to-use software products tailored to meet diverse business needs.
-                    
-                    </p>
+            <p className="text-lg lg:text-center text-left md:max-w-[60%] md:text-xl text-gray-900 mb-8">
+              We provide custom software development and ready-to-use software
+              products tailored to meet diverse business needs.
+            </p>
           </div>
-         
+
           <div className="flex justify-center space-x-4">
-            <a
-              href="/products"
-              className="primary-button"
-            >
-              Products
-            </a>
-            <a
-              href="#services"
-              className="outline-button"
-            >
-              Services
+            <a href="/products" className="primary-button-white">
+              Ready Made Software
             </a>
           </div>
         </div>
-      </section>
-    );
-  };
-  
-  
+      </ZoomInOnScroll>
+    </section>
+  );
+};
