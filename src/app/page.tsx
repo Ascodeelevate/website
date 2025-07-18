@@ -15,7 +15,7 @@ export default function Home() {
         <ServicesSection />
         <AboutUsSection />
         <Testimonial />
-        {/* <TrustedClients /> */}
+        <TrustedClients />
    </main>
   );
 }
